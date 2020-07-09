@@ -9,3 +9,16 @@ before_install:
 
 script:
         - docker run kengang/docker-react npm run test -- --coverage 
+
+deploy:
+        provider: elasticbeanstalk
+        region: "us-east-1"
+        app: "dockertest"
+        env: "Dockertest-env"
+        bucket_name: "elasticbeanstalk-us-east-1-504949500814"
+        bucket_path: "dockertest"
+        on: 
+           branch: master
+        access_key_id: $AWS_ACCESS_KEY
+        secrete_access_key:
+                secure: "$AWS_SECRET_KEY"
