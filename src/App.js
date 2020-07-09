@@ -11,7 +11,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          hi there, this is a new voluem mapped. blahahaaaa; welcome to the galaxy.
+          I was changed in the feature branch. ----- hi there, this is a new voluem mapped. blahahaaaa; welcome to the galaxy.
         </p>
       </div>
     );
